@@ -3,7 +3,7 @@
 A collection of **bash** scripts from Kathenas (Phil Wyett).
 
 All words where not keywords are using UK spelling. Please do not submit Pull 
-Requests (PR) requests on for non-UK spelling.
+Requests (PR) requests for non-UK spelling.
 
 ## Donations
 
