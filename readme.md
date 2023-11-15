@@ -9,4 +9,4 @@ Requests (PR) requests for non-UK spelling.
 
 Please consider supporting Free/Open Source developers like myself who provide 
 content for free. Voluntary donations can be made at 
-<a href="https://www.buymeacoffee.com/kathenasorg" target="_blank">Kathenas on Buy me a Coffee</a>.
+[Kathenas on Buy me a Coffee](https://www.buymeacoffee.com/kathenasorg).
