@@ -40,7 +40,7 @@ set_contrast=1.00
 set_brightness=0.00
 set_saturation=1.20
 
-# Convert gnome internal screencast encoder vp9 webm file to mp4.
+# Convert gnome internal screencast encoder webm file to mp4.
 for in_filename in *.[wW][eE][bB][mM]
 do
     ffmpeg -i "$in_filename" \
