@@ -2,8 +2,11 @@
 
 A collection of **bash** scripts from Kathenas (Phil Wyett).
 
-All words where not keywords are using UK spelling. Please do not submit Pull 
-Requests (PR) requests for non-UK spelling.
+If you pass on use these scripts in a public arena, please give credit where
+applicable.
+
+**Spelling** - All words where not keywords are using UK spelling. Please do
+not submit Pull Requests (PR) requests for non-UK spelling.
 
 ## Donations
 
