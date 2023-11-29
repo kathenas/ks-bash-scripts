@@ -14,6 +14,18 @@ yellow_text='\033[0;33m'
 green_text='\033[32m'
 end_colour_text='\033[0m'
 
+# If script run with 'sh', inform to execute directly or invoke with 'bash'.
+if [ ! "$BASH_VERSION" ] ; then
+    printf "\n%b=== WARNING ===%b\n" "${yellow_text}" "${end_colour_text}"
+    printf "\nPlease do not use %bsh%b to run this script %b%s%b. Run directly \
+e.g. %b./%s%b if the script is set executable or use %bbash %s%b instead \
+of %bsh %s%b.\n\n" 1>&2 "${yellow_text}" "${end_colour_text}" "${yellow_text}" \
+"$0" "${end_colour_text}" "${green_text}" "$0" "${end_colour_text}" \
+"${green_text}" "$0" "${end_colour_text}" "${yellow_text}" "$0" \
+"${end_colour_text}"
+    exit 1
+fi
+
 # Check we have ffmpeg installed and available for use.
 if ! [ -x "$(command -v ffmpeg)" ]
 then
