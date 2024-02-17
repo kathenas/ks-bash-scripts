@@ -47,7 +47,7 @@ then
 fi
 
 # Check we have 'ssmtp' installed and available for use.
-if ! [ -x "$(command -v ssmtp)" ]
+if ! [ -x "$(command -v /sbin/ssmtp)" ]
 then
     printf "\n%b=== CRITICAL ===%b\n" "${red_text}" "${end_colour_text}"
     printf "\n'ssmtp' could not be found.\n"
@@ -111,7 +111,7 @@ subject="FFMPEG: Task status - complete."
 body="FFMPEG processing task on host machine '${HOSTNAME}' is complete."
 
 # Construct and send out our email.
-printf "Subject: %s\n\n%s" "${subject}" "${body}" | ssmtp -f "${sender}" \
+printf "Subject: %s\n\n%s" "${subject}" "${body}" | /sbin/ssmtp -f "${sender}" \
 "${recipient}"
 
 # Shameless plug to support poor Free/Open Source developers like myself who
